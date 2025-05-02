@@ -11,6 +11,8 @@
 #include "gps.h"
 #include "stm32g4xx_hal.h"
 #include "stdlib.h"
+#include <string.h>
+#include <stdarg.h> //for va_list var arg functions
 
 /*
 
@@ -68,6 +70,7 @@ static void dispMsg(){
 }
 
 
+
 static void pollAdc(){
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, 10);
@@ -109,6 +112,9 @@ static void calcRFAvg(){
 	}
 	rxAvg = a/arrSize;
 }
+
+
+
 
 void maincall(void){
 

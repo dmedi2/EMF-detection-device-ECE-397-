@@ -71,10 +71,14 @@ void main_call(void);
 #define GPS_TX_GPIO_Port GPIOA
 #define GPS_RX_Pin GPIO_PIN_10
 #define GPS_RX_GPIO_Port GPIOA
+#define SPI3_CS_Pin GPIO_PIN_6
+#define SPI3_CS_GPIO_Port GPIOB
 #define GPS_RESET_Pin GPIO_PIN_7
 #define GPS_RESET_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+
+#define SD_SPI_HANDLE hspi3
 
 /* USER CODE END Private defines */
 
